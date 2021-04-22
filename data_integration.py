@@ -2,13 +2,14 @@ import pandas as pd
 
 file = pd.read_excel(PATH)
 
-user_id = []
-topic=[]
-gamma=[]
+user_id = []#id
+topic=[]#category
+gamma=[]#the value to the id
 l=0
 #n is the number of categories in your dataset
 n=21
 
+#define a function to locate the last category where the id appears
 def unique_index(L,e):
     return [i for (i,j) in enumerate(L) if j == e][-1]
 
