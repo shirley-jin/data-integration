@@ -1,6 +1,7 @@
 import pandas as pd
 
 file = pd.read_excel(PATH)
+file = file.sort_values(by=["topic"])
 
 user_id = []#id
 topic=[]#category
